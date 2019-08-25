@@ -215,7 +215,7 @@
           2. 将本地磁盘文件提交到gitee仓库
         -->
         <repository>
-            <id>keter-framework</id>
+            <id>keter-cloud-framework</id>
             <!--<url>file:w:/git/maven/repository/</url>-->
             <url>file:n:/git/maven/repository/</url>
         </repository>
