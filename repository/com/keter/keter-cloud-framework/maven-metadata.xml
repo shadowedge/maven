@@ -3,13 +3,14 @@
   <groupId>com.keter</groupId>
   <artifactId>keter-cloud-framework</artifactId>
   <versioning>
-    <release>20190825</release>
+    <release>20190826</release>
     <versions>
       <version>20190824</version>
       <version>20190824.1</version>
       <version>20190824.2</version>
       <version>20190825</version>
+      <version>20190826</version>
     </versions>
-    <lastUpdated>20190825025622</lastUpdated>
+    <lastUpdated>20190826134607</lastUpdated>
   </versioning>
 </metadata>
