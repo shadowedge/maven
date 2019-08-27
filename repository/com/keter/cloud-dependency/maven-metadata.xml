@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>com.keter</groupId>
-  <artifactId>cloud-framework</artifactId>
+  <artifactId>cloud-dependency</artifactId>
   <versioning>
-    <release>20190827.2</release>
+    <release>${revision}</release>
     <versions>
-      <version>20190827</version>
-      <version>20190827.1</version>
-      <version>20190827.2</version>
+      <version>20190827.3</version>
+      <version>${revision}</version>
     </versions>
     <lastUpdated>20190827130936</lastUpdated>
   </versioning>

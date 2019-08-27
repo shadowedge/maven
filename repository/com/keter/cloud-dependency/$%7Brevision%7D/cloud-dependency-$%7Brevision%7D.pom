@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.7.RELEASE</version>
+        <relativePath/>
+    </parent>
+    <groupId>com.keter</groupId>
+    <artifactId>cloud-dependency</artifactId>
+    <version>${revision}</version>
+    <name>Keter Cloud Framework Parent</name>
+    <description>Keter Cloud 平台基础框架</description>
+    <url>http://projects.spring.io/spring-boot/</url>
+    <organization>
+        <name>Keter</name>
+        <url>http://www.keter.com</url>
+    </organization>
+    <packaging>pom</packaging>
+    <modules>
+        <module>cloud-dependency</module>
+        <module>cloud-framework</module>
+    </modules>
+    <distributionManagement>
+    <repository>
+        <id>keter-cloud-framework</id>
+        <url>file:n:/git/maven/repository/</url>
+    </repository>
+    </distributionManagement>
+</project>
