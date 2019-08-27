@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>com.keter</groupId>
-  <artifactId>cloud-framework</artifactId>
+  <artifactId>cloud-parent</artifactId>
   <versioning>
     <release>20190827</release>
     <versions>
