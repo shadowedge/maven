@@ -11,16 +11,19 @@
     <groupId>com.keter</groupId>
     <artifactId>cloud-parent</artifactId>
     <version>1.0</version>
-    <name>Keter Cloud Framework Parent</name>
-    <description>Keter Cloud 平台基础框架</description>
-    <url>http://projects.spring.io/spring-boot/</url>
+    <name>Keter Cloud Parent</name>
+    <description>依赖库管理、插件统一版本管理</description>
     <organization>
         <name>Keter</name>
         <url>http://www.keter.com</url>
     </organization>
     <packaging>pom</packaging>
     <properties>
-        <cloud-framework.version>20190827.2</cloud-framework.version>
+        <revision>1.0</revision>
+        <framework-core.version>20190925</framework-core.version>
+        <framework.version>20190925</framework.version>
+        <framework-test.version>20190925</framework-test.version>
+        <cloud-test.version>20190925</cloud-test.version>
         <druid.version>1.1.19</druid.version>
         <jfinal.version>4.4</jfinal.version>
         <guava.version>28.0-jre</guava.version>
@@ -29,17 +32,37 @@
         <id-generator.version>2.3</id-generator.version>
         <rest-assured.version>3.2.0</rest-assured.version>
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+        <jjwt.version>0.9.1</jjwt.version>
         <java.version>1.8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
-    <modules>
-        <module>cloud-framework</module>
-    </modules>
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>com.keter</groupId>
                 <artifactId>cloud-framework</artifactId>
                 <version>${cloud-framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.keter</groupId>
+                <artifactId>framework-core</artifactId>
+                <version>${framework-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.keter</groupId>
+                <artifactId>framework</artifactId>
+                <version>${framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.keter</groupId>
+                <artifactId>framework-test</artifactId>
+                <version>${framework-test.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.keter</groupId>
+                <artifactId>cloud-test</artifactId>
+                <version>${cloud-test.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.google.guava</groupId>
@@ -72,6 +95,11 @@
                 <version>${druid.version}</version>
             </dependency>
             <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>io.rest-assured</groupId>
                 <artifactId>rest-assured</artifactId>
                 <version>${rest-assured.version}</version>
@@ -96,6 +124,90 @@
             <url>file:n:/git/maven/repository/</url>
         </repository>
     </distributionManagement>
+    <build>
+    <pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <!-- 自动化测试 -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.20.1</version>
+                <configuration>
+                    <!-- 不用每次测试创建一个新虚拟机 -->
+                    <forkMode>never</forkMode>
+                    <!-- 防止测试出现中文乱码 -->
+                    <argLine>-Dfile.encoding=UTF-8</argLine>
+                    <!-- 忽略错误 -->
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <excludes>
+                        <exclude>**/*BaseTest.java</exclude>
+                        <exclude>**/*RestTest.java</exclude>
+                        <exclude>**/MailControllerTest.java</exclude>
+                        <exclude>**/MailServiceTest.java</exclude>
+                    </excludes>
+                    <skip>false</skip>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.7</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.shared</groupId>
+                        <artifactId>maven-filtering</artifactId>
+                        <version>1.3</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <!-- 复制二进制文件 -->
+                    <execution>
+                        <id>copy-jar</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <!-- 防止二进制文件被误编码 -->
+                            <nonFilteredFileExtensions>
+                                <nonFilteredFileExtension>jar</nonFilteredFileExtension>
+                            </nonFilteredFileExtensions>
+                            <outputDirectory>build</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>target</directory>
+                                    <includes>
+                                        <include>*.jar</include>
+                                    </includes>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </pluginManagement>
+    </build>
 
     <repositories>
         <repository>
@@ -103,4 +215,5 @@
             <url>https://raw.githubusercontent.com/shadowedge/maven/master/repository/</url>
         </repository>
     </repositories>
+
 </project>

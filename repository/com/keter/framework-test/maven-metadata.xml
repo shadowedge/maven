@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>com.keter</groupId>
-  <artifactId>cloud-parent</artifactId>
+  <artifactId>framework-test</artifactId>
   <versioning>
-    <release>1.0</release>
+    <release>20190925</release>
     <versions>
-      <version>1.0</version>
+      <version>20190925</version>
     </versions>
-    <lastUpdated>20190925144136</lastUpdated>
+    <lastUpdated>20190925144141</lastUpdated>
   </versioning>
 </metadata>
