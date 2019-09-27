@@ -20,9 +20,9 @@
     <packaging>pom</packaging>
     <properties>
         <revision>1.0</revision>
-        <framework-core.version>20190926</framework-core.version>
-        <framework-common.version>20190926</framework-common.version>
-        <framework-test.version>20190926</framework-test.version>
+        <framework-core.version>20190927</framework-core.version>
+        <framework-common.version>20190927</framework-common.version>
+        <framework-test.version>20190927</framework-test.version>
         <druid.version>1.1.19</druid.version>
         <jfinal.version>4.4</jfinal.version>
         <guava.version>28.0-jre</guava.version>
