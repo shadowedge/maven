@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.keter</groupId>
+    <artifactId>cloud-framework</artifactId>
+    <version>20190513</version>
+    <packaging>pom</packaging>
+    <description>Keter Cloud 微服务平台框架</description>
+    <modules>
+        <module>core</module>
+        <module>common</module>
+        <module>test</module>
+        <module>parent</module>
+    </modules>
+    <distributionManagement>
+        <!-- 发布方法：
+          1. 执行mvn deploy将文件发布到本地磁盘
+          2. 将本地磁盘文件提交到Github仓库
+        -->
+        <repository>
+            <id>keter-cloud-framework</id>
+            <url>file:n:/git/maven/repository/</url>
+        </repository>
+    </distributionManagement>
+</project>
