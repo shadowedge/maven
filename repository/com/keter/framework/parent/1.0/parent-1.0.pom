@@ -20,15 +20,12 @@
     <packaging>pom</packaging>
     <properties>
         <revision>1.0</revision>
-        <framework-core.version>20190927</framework-core.version>
-        <framework-common.version>20190927</framework-common.version>
-        <framework-test.version>20190927</framework-test.version>
+        <framework.version>20191001</framework.version>
         <druid.version>1.1.19</druid.version>
         <jfinal.version>4.4</jfinal.version>
         <guava.version>28.0-jre</guava.version>
         <fastjson.version>1.2.59</fastjson.version>
         <swagger.version>2.9.2</swagger.version>
-        <id-generator.version>2.3</id-generator.version>
         <rest-assured.version>3.2.0</rest-assured.version>
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
         <jjwt.version>0.9.1</jjwt.version>
@@ -41,17 +38,17 @@
             <dependency>
                 <groupId>com.keter.framework</groupId>
                 <artifactId>core</artifactId>
-                <version>${framework-core.version}</version>
+                <version>${framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.keter.framework</groupId>
-                <artifactId>common</artifactId>
-                <version>${framework-common.version}</version>
+                <artifactId>app</artifactId>
+                <version>${framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.keter.framework</groupId>
                 <artifactId>test</artifactId>
-                <version>${framework-test.version}</version>
+                <version>${framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.google.guava</groupId>

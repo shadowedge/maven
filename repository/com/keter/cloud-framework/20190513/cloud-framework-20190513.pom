@@ -10,7 +10,7 @@
     <description>Keter Cloud 微服务平台框架</description>
     <modules>
         <module>core</module>
-        <module>common</module>
+        <module>app</module>
         <module>test</module>
         <module>parent</module>
     </modules>
