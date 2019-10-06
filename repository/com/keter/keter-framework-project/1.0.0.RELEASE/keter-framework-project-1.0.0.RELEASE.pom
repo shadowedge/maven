@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <description>Keter 开发平台框架</description>
     <properties>
-        <revision>1.0.0</revision>
+        <revision>0.1</revision>
         <main.basedir>${basedir}</main.basedir>
     </properties>
     <modules>

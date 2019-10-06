@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <groupId>com.keter</groupId>
-  <artifactId>keter-framework-project</artifactId>
+  <groupId>com.keter.framework</groupId>
+  <artifactId>test</artifactId>
   <versioning>
     <release>1.0.0.RELEASE</release>
     <versions>
