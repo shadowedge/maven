@@ -19,8 +19,7 @@
     </organization>
     <packaging>pom</packaging>
     <properties>
-        <revision>1.0</revision>
-        <framework.version>20191001</framework.version>
+        <framework.version>20191006</framework.version>
         <druid.version>1.1.19</druid.version>
         <jfinal.version>4.4</jfinal.version>
         <guava.version>28.0-jre</guava.version>
@@ -42,7 +41,12 @@
             </dependency>
             <dependency>
                 <groupId>com.keter.framework</groupId>
-                <artifactId>app</artifactId>
+                <artifactId>web</artifactId>
+                <version>${framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.keter.framework</groupId>
+                <artifactId>cloud</artifactId>
                 <version>${framework.version}</version>
             </dependency>
             <dependency>
@@ -136,8 +140,6 @@
                     <excludes>
                         <exclude>**/*BaseTest.java</exclude>
                         <exclude>**/*RestTest.java</exclude>
-                        <exclude>**/MailControllerTest.java</exclude>
-                        <exclude>**/MailServiceTest.java</exclude>
                     </excludes>
                     <skip>false</skip>
                 </configuration>
