@@ -3,10 +3,11 @@
   <groupId>com.keter</groupId>
   <artifactId>keter-framework-project</artifactId>
   <versioning>
-    <release>0.1</release>
+    <release>1.0.0.RELEASE</release>
     <versions>
       <version>0.1</version>
+      <version>1.0.0.RELEASE</version>
     </versions>
-    <lastUpdated>20191006150122</lastUpdated>
+    <lastUpdated>20191006150231</lastUpdated>
   </versioning>
 </metadata>
