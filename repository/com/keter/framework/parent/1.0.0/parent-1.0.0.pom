@@ -11,7 +11,7 @@
     <groupId>com.keter.framework</groupId>
     <artifactId>parent</artifactId>
     <version>1.0.0</version>
-    <name>Keter Cloud Parent</name>
+    <name>Framework Parent</name>
     <description>依赖库管理、插件统一版本管理</description>
     <organization>
         <name>Keter</name>
@@ -19,7 +19,7 @@
     </organization>
     <packaging>pom</packaging>
     <properties>
-        <framework.version>20191006.1</framework.version>
+        <revision>1.0.0</revision>
         <druid.version>1.1.19</druid.version>
         <jfinal.version>4.4</jfinal.version>
         <guava.version>28.0-jre</guava.version>
@@ -31,28 +31,29 @@
         <java.version>1.8</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+        <main.basedir>${basedir}/..</main.basedir>
     </properties>
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>com.keter.framework</groupId>
                 <artifactId>core</artifactId>
-                <version>${framework.version}</version>
+                <version>${revision}</version>
             </dependency>
             <dependency>
                 <groupId>com.keter.framework</groupId>
                 <artifactId>web</artifactId>
-                <version>${framework.version}</version>
+                <version>${revision}</version>
             </dependency>
             <dependency>
                 <groupId>com.keter.framework</groupId>
                 <artifactId>cloud</artifactId>
-                <version>${framework.version}</version>
+                <version>${revision}</version>
             </dependency>
             <dependency>
                 <groupId>com.keter.framework</groupId>
                 <artifactId>test</artifactId>
-                <version>${framework.version}</version>
+                <version>${revision}</version>
             </dependency>
             <dependency>
                 <groupId>com.google.guava</groupId>
