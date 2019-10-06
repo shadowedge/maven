@@ -11,8 +11,8 @@
     <groupId>com.keter.framework</groupId>
     <version>${framework.version}</version>
     <artifactId>cloud</artifactId>
-    <name>Framework for APP</name>
-    <description>Keter Cloud 平台应用框架</description>
+    <name>Framework for Cloud</name>
+    <description>Keter 平台微服务应用框架：可基于本框架构建SpringCloud微服务体系应用</description>
     <url>http://projects.spring.io/spring-boot/</url>
     <organization>
         <name>Keter</name>
