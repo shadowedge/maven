@@ -9,7 +9,7 @@
         <relativePath>../parent</relativePath>
     </parent>
     <groupId>com.keter.framework</groupId>
-    <artifactId>test</artifactId>
+    <artifactId>keter-framework-test</artifactId>
     <version>${revision}</version>
     <name>Framework Test</name>
     <description>Keter Cloud 平台基础框架</description>
