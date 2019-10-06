@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.keter.framework</groupId>
-        <artifactId>parent</artifactId>
+        <artifactId>keter-framework-parent</artifactId>
         <version>${revision}</version>
         <relativePath>../parent</relativePath>
     </parent>

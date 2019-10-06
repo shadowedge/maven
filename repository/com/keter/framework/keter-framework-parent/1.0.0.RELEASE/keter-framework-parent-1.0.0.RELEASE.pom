@@ -9,7 +9,7 @@
         <relativePath/>
     </parent>
     <groupId>com.keter.framework</groupId>
-    <artifactId>parent</artifactId>
+    <artifactId>keter-framework-parent</artifactId>
     <version>${revision}</version>
     <name>Framework Parent</name>
     <description>依赖库管理、插件统一版本管理</description>
