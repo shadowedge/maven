@@ -3,7 +3,7 @@
   <groupId>keter</groupId>
   <artifactId>combofs-starter</artifactId>
   <versioning>
-    <release>0.1.2.RELEASE</release>
+    <release>0.1.2.1.RELEASE</release>
     <versions>
       <version>0.0.1-SNAPSHOT</version>
       <version>0.1.RELEASE</version>
@@ -11,7 +11,8 @@
       <version>0.1.2-SNAPSHOT</version>
       <version>0.1.2.RELEASE</version>
       <version>0.1.2.1-SNAPSHOT</version>
+      <version>0.1.2.1.RELEASE</version>
     </versions>
-    <lastUpdated>20191202060239</lastUpdated>
+    <lastUpdated>20191202061040</lastUpdated>
   </versioning>
 </metadata>
