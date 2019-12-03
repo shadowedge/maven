@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata modelVersion="1.1.0">
   <groupId>keter</groupId>
-  <artifactId>combofs-starter-fs</artifactId>
+  <artifactId>combofs-starter-s3</artifactId>
   <version>0.1.3-SNAPSHOT</version>
   <versioning>
     <snapshot>
-      <timestamp>20191203.075018</timestamp>
-      <buildNumber>3</buildNumber>
+      <timestamp>20191203.075020</timestamp>
+      <buildNumber>1</buildNumber>
     </snapshot>
-    <lastUpdated>20191203075018</lastUpdated>
+    <lastUpdated>20191203075020</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>0.1.3-20191203.075018-3</value>
-        <updated>20191203075018</updated>
+        <value>0.1.3-20191203.075020-1</value>
+        <updated>20191203075020</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>0.1.3-20191203.075018-3</value>
-        <updated>20191203075018</updated>
+        <value>0.1.3-20191203.075020-1</value>
+        <updated>20191203075020</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>

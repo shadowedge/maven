@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>keter</groupId>
-  <artifactId>combofs-starter-fs</artifactId>
+  <artifactId>combofs-starter-s3</artifactId>
   <versioning>
     <versions>
       <version>0.1.3-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20191203075018</lastUpdated>
+    <lastUpdated>20191203075020</lastUpdated>
   </versioning>
 </metadata>
