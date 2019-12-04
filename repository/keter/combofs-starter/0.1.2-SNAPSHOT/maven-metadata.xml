@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>keter</groupId>
+  <artifactId>combofs-starter</artifactId>
+  <version>0.1.2-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+<<<<<<< HEAD
+      <timestamp>20191124.123810</timestamp>
+      <buildNumber>4</buildNumber>
+    </snapshot>
+    <lastUpdated>20191124123810</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.1.2-20191124.123810-4</value>
+        <updated>20191124123810</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.1.2-20191124.123810-4</value>
+        <updated>20191124123810</updated>
+=======
+      <timestamp>20191122.005849</timestamp>
+      <buildNumber>4</buildNumber>
+    </snapshot>
+    <lastUpdated>20191122005849</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>0.1.2-20191122.005849-4</value>
+        <updated>20191122005849</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.1.2-20191122.005849-4</value>
+        <updated>20191122005849</updated>
+>>>>>>> 6fa0b23fdf30037a39308f96509ed61f9717cbce
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
