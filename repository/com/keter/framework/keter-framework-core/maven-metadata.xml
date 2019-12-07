@@ -11,7 +11,8 @@
       <version>test-SNAPSHOT</version>
       <version>1.0.1.RELEASE</version>
       <version>1.0.2-snapshot</version>
+      <version>1.0.2-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20191207151904</lastUpdated>
+    <lastUpdated>20191207153248</lastUpdated>
   </versioning>
 </metadata>
