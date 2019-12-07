@@ -10,8 +10,7 @@
     </parent>
     <groupId>com.keter.framework</groupId>
     <artifactId>keter-framework-parent</artifactId>
-    <!--<version>1.0.1-SNAPSHOT</version>-->
-    <version>1.0.1.RELEASE</version>
+    <version>${revision}</version>
     <name>Framework Parent</name>
     <description>依赖库管理、插件统一版本管理</description>
     <organization>
@@ -20,7 +19,9 @@
     </organization>
     <packaging>pom</packaging>
     <properties>
-       <!-- <revision>1.0.1-SNAPSHOT</revision>-->
+<!--
+        <revision>1.0.1-SNAPSHOT</revision>
+-->
         <revision>1.0.1.RELEASE</revision>
         <druid.version>1.1.19</druid.version>
         <jfinal.version>4.4</jfinal.version>
