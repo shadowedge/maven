@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.7.RELEASE</version>
+        <relativePath/>
+    </parent>
+    <groupId>com.keter.framework</groupId>
+    <artifactId>example</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+    <name>Framework Example</name>
+    <description>依赖库管理、插件统一版本管理</description>
+    <organization>
+        <name>Keter</name>
+        <url>http://www.keter.com</url>
+    </organization>
+    <packaging>pom</packaging>
+    <modules>
+        <module>example-web</module>
+    </modules>
+    <distributionManagement>
+        <!-- 发布方法：
+          1. 执行mvn deploy将文件发布到本地磁盘
+          2. 将本地磁盘文件提交到Github仓库
+        -->
+        <repository>
+            <id>keter-cloud-framework</id>
+            <url>file:w:/git/maven/repository/</url>
+        </repository>
+    </distributionManagement>
+</project>
