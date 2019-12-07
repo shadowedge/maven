@@ -59,15 +59,4 @@
 			</plugin>
         </plugins>
 	</build>
-
-	<distributionManagement>
-		<!-- 发布方法：
-          1. 执行mvn deploy将文件发布到本地磁盘
-          2. 将本地磁盘文件提交到Github仓库
-        -->
-		<repository>
-			<id>keter-cloud-framework</id>
-			<url>file:w:/git/maven/repository/</url>
-		</repository>
-	</distributionManagement>
 </project>
