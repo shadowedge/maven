@@ -3,11 +3,12 @@
   <groupId>com.keter.framework</groupId>
   <artifactId>example-web</artifactId>
   <versioning>
-    <release>1.0.1.RELEASE</release>
+    <release>1.0.2-snapshot</release>
     <versions>
       <version>1.0.1-SNAPSHOT</version>
       <version>1.0.1.RELEASE</version>
+      <version>1.0.2-snapshot</version>
     </versions>
-    <lastUpdated>20191207150454</lastUpdated>
+    <lastUpdated>20191207151906</lastUpdated>
   </versioning>
 </metadata>

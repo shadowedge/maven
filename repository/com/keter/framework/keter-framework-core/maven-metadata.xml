@@ -3,14 +3,15 @@
   <groupId>com.keter.framework</groupId>
   <artifactId>keter-framework-core</artifactId>
   <versioning>
-    <release>1.0.1.RELEASE</release>
+    <release>1.0.2-snapshot</release>
     <versions>
       <version>1.0.0</version>
       <version>1.0.0.RELEASE</version>
       <version>1.0.1-SNAPSHOT</version>
       <version>test-SNAPSHOT</version>
       <version>1.0.1.RELEASE</version>
+      <version>1.0.2-snapshot</version>
     </versions>
-    <lastUpdated>20191207150452</lastUpdated>
+    <lastUpdated>20191207151904</lastUpdated>
   </versioning>
 </metadata>
