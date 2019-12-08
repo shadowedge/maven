@@ -3,9 +3,11 @@
   <groupId>com.keter.framework</groupId>
   <artifactId>keter-framework-core</artifactId>
   <versioning>
+    <release>haha</release>
     <versions>
       <version>v1-SNAPSHOT</version>
+      <version>haha</version>
     </versions>
-    <lastUpdated>20191208053523</lastUpdated>
+    <lastUpdated>20191208111943</lastUpdated>
   </versioning>
 </metadata>
