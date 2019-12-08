@@ -3,10 +3,12 @@
   <groupId>com.keter.framework</groupId>
   <artifactId>keter-framework-cloud</artifactId>
   <versioning>
+    <release>v1</release>
     <versions>
       <version>1.0.1-SNAPSHOT</version>
       <version>v1-SNAPSHOT</version>
+      <version>v1</version>
     </versions>
-    <lastUpdated>20191208111946</lastUpdated>
+    <lastUpdated>20191208113100</lastUpdated>
   </versioning>
 </metadata>
