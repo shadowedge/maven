@@ -3,16 +3,9 @@
   <groupId>com.keter.framework</groupId>
   <artifactId>keter-framework-web</artifactId>
   <versioning>
-    <release>haha</release>
     <versions>
-      <version>1.0.0</version>
-      <version>1.0.0.RELEASE</version>
       <version>1.0.1-SNAPSHOT</version>
-      <version>1.0.1.RELEASE</version>
-      <version>1.0.2-snapshot</version>
-      <version>1.0.2-SNAPSHOT</version>
-      <version>haha</version>
     </versions>
-    <lastUpdated>20191208032223</lastUpdated>
+    <lastUpdated>20191208052142</lastUpdated>
   </versioning>
 </metadata>
