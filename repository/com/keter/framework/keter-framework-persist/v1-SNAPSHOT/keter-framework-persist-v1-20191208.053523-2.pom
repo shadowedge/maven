@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.keter.framework</groupId>
+        <artifactId>keter-framework-parent</artifactId>
+       <!-- <version>1.0.1-SNAPSHOT</version>-->
+        <version>${revision}</version>
+        <relativePath>../parent</relativePath>
+    </parent>
+    <groupId>com.keter.framework</groupId>
+    <version>${revision}</version>
+    <artifactId>keter-framework-persist</artifactId>
+    <name>Framework Persist</name>
+    <description>持久化功能模块</description>
+    <url>http://projects.spring.io/spring-boot/</url>
+    <organization>
+        <name>Keter</name>
+        <url>http://www.keter.com</url>
+    </organization>
+    <packaging>jar</packaging>
+    <properties>
+        <main.basedir>${basedir}/../..</main.basedir>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.keter.framework</groupId>
+            <artifactId>keter-framework-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.jfinal</groupId>
+            <artifactId>jfinal</artifactId>
+        </dependency>
+        <!-- 连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <!-- 自动化测试 -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
