@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.keter.framework</groupId>
     <artifactId>keter-framework-parent</artifactId>
-    <!-- 子模块单独编译时，parenet无法被正确构建（Failed to build parent project for xxx），但不影响子模块组件的使用 -->
+    <!-- 子模块单独编译时，使用revision会导致parenet无法被正确构建（Failed to build parent project for xxx），但不影响子模块组件的使用 -->
     <version>${revision}</version>
     <name>Framework Parent</name>
     <description>依赖库管理、插件统一版本管理</description>
