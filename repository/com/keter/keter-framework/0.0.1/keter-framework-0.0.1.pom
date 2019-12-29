@@ -10,7 +10,7 @@
     <description>Keter 开发平台框架</description>
     <properties>
         <main.basedir>${basedir}</main.basedir>
-        <repository.url>file:w:/git/maven/repository/</repository.url>
+        <repository.url>file:f:/git/maven/repository/</repository.url>
     </properties>
     <modules>
         <module>core</module>
