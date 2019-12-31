@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.keter.framework</groupId>
+        <artifactId>keter-framework-parent</artifactId>
+        <!-- parent的version不能写revision，会导致安装或部署后的包不可用 -->
+        <version>v1.1-SNAPSHOT</version>
+        <relativePath>parent</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.keter</groupId>
+    <artifactId>keter-framework</artifactId>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
+    <description>Keter 开发平台框架</description>
+    <properties>
+        <main.basedir>${basedir}</main.basedir>
+        <repository.url>file:f:/git/maven/repository/</repository.url>
+    </properties>
+    <modules>
+        <module>core</module>
+        <module>persist</module>
+        <module>web</module>
+        <module>cloud</module>
+        <module>test</module>
+        <module>example</module>
+        <module>parent</module>
+        <module>mail</module>
+    </modules>
+<!--    <distributionManagement>
+        &lt;!&ndash; 发布方法：
+          1. 执行mvn deploy将文件发布到本地磁盘
+          2. 将本地磁盘文件提交到Github仓库
+        &ndash;&gt;
+        <repository>
+            <id>keter-cloud-framework</id>
+            <url>${repository.url}</url>
+        </repository>
+    </distributionManagement>-->
+</project>
