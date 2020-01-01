@@ -6,7 +6,7 @@
         <groupId>com.keter.framework</groupId>
         <artifactId>keter-framework-parent</artifactId>
         <!-- parent的version不能写revision，会导致安装或部署后的包不可用 -->
-        <version>v1-SNAPSHOT</version>
+        <version>v1</version>
         <relativePath>../parent</relativePath>
     </parent>
     <version>${revision}</version>
